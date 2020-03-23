@@ -1,0 +1,38 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: skyblue;
+  font-family: arial;
+  background-image: url(pokemon.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: green;
+}
+
+#inputHolder{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#update, #entryContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.updateButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

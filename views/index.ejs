@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1> (True) Favorite Pokémon Simulator </h1>
+<section id="entryContainer">
+  <ul class="quotes">
+  <% for(var i=0; i<quotes.length; i++) {%>
+    <li class="quote">
+      <span><%= quotes[i].name %></span>
+      <span><%= quotes[i].quote %></span>
+    </li>
+  <% } %>
+  </ul>
+</section>
+
+  <h2>Write the name of your favorite Pokémon below</h2>
+
+<!-- Using the form and "action" attribute to activate put request -->
+<section id="inputHolder">
+    <form action="/quotes" method="POST">
+    <input type="text" placeholder="Write: pokemon" name="name">
+    <input type="text" placeholder="[insert name here]" name="quote">
+    <button type="submit">Submit</button>
+  </form>
+</section>
+<!-- Using main.js and linking it to ejs to activate the put request -->
+  <div id="truePokemon">
+  <h2> Know you'll find out your TRUE favorite pokemon ...  </h2>
+  <div class="updateButton">
+    <button id="update"> The Truth! </button>
+  </div>
+  </div>
+
+<!-- USING a delete button  -->
+<div>
+  <h2>Delete your truth :( </h2>
+  <div class="updateButton">
+    <button id="delete"> Delete! </button>
+  </div>
+</div>
+
+  <script src="main.js"></script>
+</body>
+</html>
